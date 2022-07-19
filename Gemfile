@@ -67,3 +67,4 @@ group :test do
   gem "webdrivers"
 end
 gem "mini_racer", platforms: :ruby
+gem "mini_racer", platforms: :ruby
