@@ -1,13 +1,15 @@
 import React from "react";
 import WrenchIcon from "./WrenchIcon";
 
-const Banner=()=> {
+const Banner = (props) => {
+ 
+
   return (
-    <div className="usa-banner">
-    <div className="usa-grid usa-banner-inner">
+    <div>
+    <div>
         <WrenchIcon />
-      <span className="banner-text">
-        We've detected technical issues in our system.
+      <span>
+      Hello {props.name} We've detected technical issues in our system.
         You can continue working, though some users may experience delays.
       </span>
     </div>
