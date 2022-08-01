@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import WrenchIcon from "./WrenchIcon";
 
 const Banner = (props) => {
- 
 
-  return (
-    <div>
+ const [post, setPost] = useState(props)
+    return (
+      <div>
     <div>
         <WrenchIcon />
-      <span>
-      Hello {props.name} We've detected technical issues in our system.
+      <div>
+      Hello  We've detected technical issues in our system.
         You can continue working, though some users may experience delays.
-      </span>
+      {post} "These are post"
+      </div>
     </div>
   </div>
   )
