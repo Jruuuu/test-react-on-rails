@@ -6,5 +6,6 @@ class HelloWorldController < ApplicationController
   def index
     @post = {Post: Post.all}
     @hello_world_props = { name: "Stranger" }
+    @banner = {BannerMessage: BannerMessage.all} 
   end
 end

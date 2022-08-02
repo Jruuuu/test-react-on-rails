@@ -1,20 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import WrenchIcon from "./WrenchIcon";
 
-const Banner = (props) => {
+export default function Banner(props) {
 
- const [post, setPost] = useState(props)
-    return (
-      <div>
+
+  const isOn = props.BannerMessage[0].isOn
+  const message = props.BannerMessage[0].message
+
+  if (isOn === true) {
+  return (
+
     <div>
-        <WrenchIcon />
       <div>
-      Hello  We've detected technical issues in our system.
-        You can continue working, though some users may experience delays.
-      {post} "These are post"
+        <WrenchIcon />
+          {message}
       </div>
     </div>
-  </div>
-  )
+    )
+  } 
+
 };
-export default Banner;

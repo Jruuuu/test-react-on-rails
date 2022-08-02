@@ -19,6 +19,10 @@ SAMPLE_POSTS = [{
   is_published: true
 }]
 
+
+banner = BannerMessage.create([{isOn: true, message: 'We have detected technical issues in our system.
+  You can continue working, though some users may experience delays.'}])
+
 SAMPLE_POSTS.each do |post|
   Post.create(post)
 end
